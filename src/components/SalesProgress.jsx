@@ -30,7 +30,10 @@ const data = [
 
 const SalesProgress = () => {
   return (
-    <div className="w-1/2 h-[21rem] bg-amber-500 rounded-xl">
+    <div
+      className=" h-[22rem] bg-[#FFF] rounded-xl"
+      style={{ width: "calc(50% - 10px)" }}
+    >
       <div className="w-full flex flex-row justify-between items-center p-3 text-[#212121]">
         <h5 className="font-semibold text-lg">Sales Progress</h5>
         <img src={dots} alt="dots icon" />

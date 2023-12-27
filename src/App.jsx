@@ -1,4 +1,5 @@
 import "./App.css";
+import Barchart from "./components/Barchart";
 import CategoriesChart from "./components/CategoriesChart";
 import ImageTabs from "./components/ImageTabs";
 import Menubar from "./components/Menubar";
@@ -6,12 +7,16 @@ import Navbar from "./components/Navbar";
 import NewArrivals from "./components/NewArrivals";
 import SalesProgress from "./components/SalesProgress";
 import SubNavbar from "./components/SubNavbar";
+import DashBoardContainer from "./container/DashBoardContainer";
 import MainListLayout from "./layout/MainListLayout";
 
 function App() {
   return (
     <>
-      <div className="w-full flex flex-row flex-wrap">
+      <div
+        className="w-full max-h-[60vh] flex flex-row flex-wrap justify-between items-start  "
+        style={{ zIndex: 1000 }}
+      >
         {/* <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -28,11 +33,14 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p> */}
         <Menubar />
-        <div className="w-4/5 h-screen bg-amber-950">
+        <div className="w-[83%] ml-60  flex flex-col items-center ">
           <Navbar />
           <SubNavbar />
           <ImageTabs />
-          <CategoriesChart />
+
+          <DashBoardContainer />
+
+          {/* <CategoriesChart />
           <SalesProgress />
 
           <MainListLayout
@@ -40,13 +48,14 @@ function App() {
             description={"More than 400+ new members"}
           >
             <NewArrivals />
-          </MainListLayout>
+          </MainListLayout> */}
 
           <MainListLayout
             title={"Recent Stats"}
             description={"More than 400+ new members"}
+            insideContainerDashBoard={false}
           >
-            <h1>hiii</h1>
+            <Barchart />
           </MainListLayout>
         </div>
       </div>

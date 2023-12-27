@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "antd": "^5.12.5",
+    "chart.js": "^4.4.1",
+    "faker": "^5.5.3",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

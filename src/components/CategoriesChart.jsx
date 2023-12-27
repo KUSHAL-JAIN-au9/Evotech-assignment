@@ -1,5 +1,6 @@
 import { Button, Dropdown, Space } from "antd";
 import { DownOutlined, UserOutlined } from "@ant-design/icons";
+import LineChart from "./LineChart";
 
 const CategoriesChart = () => {
   const handleMenuClick = (e) => {
@@ -37,9 +38,12 @@ const CategoriesChart = () => {
     onClick: handleMenuClick,
   };
   return (
-    <div className="w-1/2 h-[342px]  bg-[#F64E60] rounded-xl p-3">
-      <div className="w-[100%] h-14 flex flex-row justify-between items-center bg-lime-600">
-        <h5 className="font-semibold text-base ">Categories</h5>
+    <div
+      className=" h-[22rem]  bg-[#F64E60] rounded-xl p-3"
+      style={{ width: "calc(50% - 10px)" }}
+    >
+      <div className="w-[100%] h-14 flex flex-row justify-between items-center">
+        <h5 className="font-semibold text-white text-base ">Categories</h5>
         <Dropdown
           menu={menuProps}
           style={{
@@ -57,6 +61,7 @@ const CategoriesChart = () => {
           </Button>
         </Dropdown>
       </div>
+      <LineChart />
     </div>
   );
 };

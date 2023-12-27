@@ -14,7 +14,7 @@ const NewArrivals = () => {
 
   const newArrivalsStatusText = {
     Approved: "bg-[#EEE5FF] text-[#8950FC]",
-    InProgress: "bg-[#EEE5FF] text-[#FFA800]",
+    InProgress: "bg-[#FFF4DE] text-[#FFA800]",
     Success: "bg-[#C9F7F5] text-[#1BC5BD]",
 
     Rejected: "bg-[#FFE2E5] text-[#F64E60]",
@@ -65,20 +65,19 @@ const NewArrivals = () => {
   ];
 
   return (
-    <div>
+    <div className="my-3">
       {" "}
       <List
-        className=" w-full p-3"
+        className=" w-full p-3 "
         itemLayout="horizontal"
         dataSource={data}
         renderItem={(item) => (
           <List.Item
             className="m-0"
             actions={[
-              <div className="w-60  bg-violet-600 flex flex-row justify-between items-center ">
+              <div className="w-60   flex flex-row justify-between items-center ">
                 <div className="flex flex-col items-end">
                   {" "}
-                  {console.log(item)}
                   <h5 className="font-semibold  text-sm text-[#464E5F]  ">
                     ${item.cost}
                   </h5>
@@ -96,12 +95,11 @@ const NewArrivals = () => {
 
               IconLists.map((icon, index) => (
                 <img
-                  className="inline pl-2 pr-2"
+                  className="inline pl-2 pr-2 cursor-pointer"
                   src={icon}
                   alt={`${icon} icon`}
                 />
               )),
-              <a key="list-loadmore-more">more</a>,
             ]}
           >
             <List.Item.Meta

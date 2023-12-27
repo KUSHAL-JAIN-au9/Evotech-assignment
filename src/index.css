@@ -6,17 +6,16 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light;
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #e5eaee;
 
   font-family: Poppins;
-/* font-size: 30px;
+  /* font-size: 30px;
 font-weight: 800;
 line-height: 45px;
 letter-spacing: 0em;
 text-align: left; */
-
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
