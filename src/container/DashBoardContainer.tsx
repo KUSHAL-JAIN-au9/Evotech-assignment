@@ -1,13 +1,13 @@
-import React from "react";
-import CategoriesChart from "../components/CategoriesChart";
-import SalesProgress from "../components/SalesProgress";
 import MainListLayout from "../layout/MainListLayout";
 import NewArrivals from "../components/NewArrivals";
+import CategoriesChart from "../components/CategoriesChart";
+import SalesProgress from "../components/SalesProgress";
+
 
 const DashBoardContainer = () => {
   return (
     <div className="w-[90%] my-3 h-auto  flex flex-row flex-wrap justify-between  ">
-      <CategoriesChart />
+    <CategoriesChart />
       <SalesProgress />
 
       <MainListLayout

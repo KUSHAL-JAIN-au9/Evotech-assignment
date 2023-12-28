@@ -4,29 +4,28 @@ import HR from "../assets/HR.png";
 import Cisco from "../assets/cisco.png";
 import Telegram from "../assets/telegram.png";
 import KTR from "../assets/ktr.png";
-
 import Settings from "../assets/Button Settings.png";
 import Trash from "../assets/ButtonTrash.png";
 import Edit from "../assets/Edit.png";
 
-const NewArrivals = () => {
-  const IconLists = [Settings, Edit, Trash];
+interface NewArrivalItem {
+  title: string;
+  description: string;
+  icon: string;
+  cost: string;
+  status: string;
+}
 
-  const newArrivalsStatusText = {
+const NewArrivals = () => {
+  const IconLists: string[] = [Settings, Edit, Trash];
+  const newArrivalsStatusText: Record<string, string> = {
     Approved: "bg-[#EEE5FF] text-[#8950FC]",
     InProgress: "bg-[#FFF4DE] text-[#FFA800]",
     Success: "bg-[#C9F7F5] text-[#1BC5BD]",
-
     Rejected: "bg-[#FFE2E5] text-[#F64E60]",
   };
 
-  const newArrivalsStatusBg = {
-    Approved: "#EEE5FF",
-    InProgress: "#FFF4DE",
-    Success: "#C9F7F5",
-    Rejected: "#FFE2E5",
-  };
-  const data = [
+  const data: NewArrivalItem[] = [
     {
       title: "Sant outstanding",
       description: "bprow@bnc.cc",
@@ -63,21 +62,18 @@ const NewArrivals = () => {
       status: "In Progress",
     },
   ];
-
   return (
     <div className="my-3">
-      {" "}
       <List
         className=" w-full p-3 "
         itemLayout="horizontal"
         dataSource={data}
-        renderItem={(item) => (
+        renderItem={(item: NewArrivalItem) => (
           <List.Item
             className="m-0"
             actions={[
               <div className="w-60   flex flex-row justify-between items-center ">
                 <div className="flex flex-col items-end">
-                  {" "}
                   <h5 className="font-semibold  text-sm text-[#464E5F]  ">
                     ${item.cost}
                   </h5>
@@ -92,9 +88,9 @@ const NewArrivals = () => {
                   {item.status}
                 </span>
               </div>,
-
               IconLists.map((icon, index) => (
                 <img
+                key={index}
                   className="inline pl-2 pr-2 cursor-pointer"
                   src={icon}
                   alt={`${icon} icon`}
@@ -131,3 +127,5 @@ const NewArrivals = () => {
 };
 
 export default NewArrivals;
+
+

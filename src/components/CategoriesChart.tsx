@@ -3,10 +3,11 @@ import { DownOutlined, UserOutlined } from "@ant-design/icons";
 import LineChart from "./LineChart";
 
 const CategoriesChart = () => {
-  const handleMenuClick = (e) => {
-    message.info("Click on menu item.");
-    console.log("click", e);
-  };
+
+  // const handleMenuClick = (e) => {
+
+  //   console.log("click", e);
+  // };
 
   const items = [
     {
@@ -35,7 +36,7 @@ const CategoriesChart = () => {
   ];
   const menuProps = {
     items,
-    onClick: handleMenuClick,
+    // onClick: handleMenuClick,
   };
   return (
     <div
@@ -45,13 +46,8 @@ const CategoriesChart = () => {
       <div className="w-[100%] h-14 flex flex-row justify-between items-center">
         <h5 className="font-semibold text-white text-base ">Categories</h5>
         <Dropdown
+         className="w-[80px] h-[30px] rounded-md text-[#FFF]"
           menu={menuProps}
-          style={{
-            width: "85px",
-            height: "30",
-            borderRadius: "6px",
-            color: "#FFF",
-          }}
         >
           <Button>
             <Space className="text-white">
