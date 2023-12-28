@@ -5,12 +5,6 @@
       [Live Link](https://evotech-frontend-assignment.netlify.app/)
 
 
-#  Evotech-Frontend-assignment
-
-
-
-## Key Features
-
 # Application Overview
 
 The application prides itself on meticulous attention to design elements, ensuring pixel-perfect accuracy in implementing the UI/UX.
