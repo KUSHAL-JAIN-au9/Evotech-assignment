@@ -1,7 +1,7 @@
 ##  Evotech-Frontend-assignment
 
 
-2. Live Hosted link of The Application
+ Live Hosted link of The Application
       [Live Link](https://evotech-frontend-assignment.netlify.app/)
 
 
@@ -53,12 +53,12 @@ To get started with the project, follow the steps below:
 
 1. Clone the repository to your local machine using the following command:
    ```
-     https://github.com/KUSHAL-JAIN-au9/Kushal-FrontendDeveloper.git
+     https://github.com/KUSHAL-JAIN-au9/Evotech-assignment.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd Kushal-FrontendDeveloper
+   cd Evotech-assignment
    ```
 
 3. Install the dependencies:
