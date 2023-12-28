@@ -13,7 +13,7 @@
 
 # Application Overview
 
-The application prides itself on meticulous attention to design elements, ensuring pixel-perfect accuracy in implementing the UI/UX. Its responsiveness across a spectrum of devices, from desktops to mobile devices, is seamlessly maintained, offering users an optimal experience regardless of the screen size.
+The application prides itself on meticulous attention to design elements, ensuring pixel-perfect accuracy in implementing the UI/UX.
 
 ## Key Features
 
